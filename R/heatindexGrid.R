@@ -58,6 +58,14 @@ heatindexGrid <- function(tas,
 
     # Convert inputs to required units
     tas.u <- getGridUnits(tas)
+    if (tolower(tas.u) %in% c("degrees celsius", "degree celsius")) {
+        attr(tas$Variable, "units") <- "degC"
+        tas.u <- "degC"
+    }
+    if (tolower(tas.u) %in% c("degrees fahrenheit", "degree fahrenheit")) {
+        attr(tas$Variable, "units") <- "degF"
+        tas.u <- "degF"
+    }
     if (ud.are.convertible(tas.u, "K")) {
         if (ud.convert(1, tas.u, "K") != 1) {
             message("[", Sys.time(), "] Converting air temperature units ...")
