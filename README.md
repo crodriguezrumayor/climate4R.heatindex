@@ -36,6 +36,6 @@ sphi <- heatindexGrid(tas = ERA5_day_t2m, hurs = ERA5_day_hurs)
 
 ## References
 
-Lu, Y.-C. and Romps, D. M. (2025). heatindex: Tools for Calculating Heat Stress. \url{https://heatindex.org}.
+Lu, Y.-C. and Romps, D. M. (2025). heatindex: Tools for Calculating Heat Stress. https://heatindex.org.
 
 Lu, Y.-C., et al. (2025). Simpler and faster: An improved heat index. Journal of Applied Meteorology and Climatology, in review.

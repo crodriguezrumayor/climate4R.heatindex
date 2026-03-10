@@ -7,7 +7,7 @@ Authors@R: as.person(c(
     "Santander Meteorology Group <http://meteo.unican.es> [cph]",
     "Carmen Rodríguez-Rumayor <rodriguezmac@unican.es> [aut,cre]"))
 Description:
-    A climate4R wrapper of the \pkg{heatindex} package implementing the simplified physiological heat index \url{https://heatindex.org}.
+    A climate4R wrapper of the 'heatindex' package implementing the simplified physiological heat index <https://heatindex.org>.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
