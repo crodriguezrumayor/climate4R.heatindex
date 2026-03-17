@@ -158,7 +158,7 @@ heatindexGrid <- function(tas,
 
     # Update variable metadata
     tas <- hurs <- NULL
-    out$Variable$varName <- "sphi"
+    out$Variable <- list(varName = "sphi", level = NULL)
     attr(out$Variable, "units") <- "K"
     attr(out$Variable, "longname") <- "Simplified Physiological Heat Index"
 
