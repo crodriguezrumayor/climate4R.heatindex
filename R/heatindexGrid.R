@@ -9,7 +9,7 @@
 #' @param max.ncores Integer. Maximum number of cores to use (default = 16).
 #' @param ncores Integer. Specific number of cores to use.
 #'
-#' @return A climate4R object with the computed index. 
+#' @return A climate4R object with the computed index in Kelvin. 
 #' @details Air temperature is internally converted to Kelvin and relative humidity to 0-1 fraction.
 #' The vectorised C++ backend \code{heatindex_vec} of the \pkg{heatindex} package (Lu and Romps, 2025)
 #' is internally called.
@@ -17,8 +17,8 @@
 #' @references
 #' Lu, Y.-C. and Romps, D. M. (2025). heatindex: Tools for Calculating Heat Stress. \url{https://heatindex.org}.
 #'  
-#' Lu, Y.-C., et al. (2025). Simpler and faster: An improved heat index. Journal of Applied Meteorology 
-#' and Climatology, in review.
+#' Lu, Y., A. Goodman, P. Kalmus, and D. M. Romps, 2026: Simpler and Faster: An Improved Heat Index. 
+#' J. Appl. Meteor. Climatol., 65, 665–679, https://doi.org/10.1175/JAMC-D-25-0067.1. 
 #'
 #' @import transformeR
 #' @importFrom magrittr %>% %<>% extract2

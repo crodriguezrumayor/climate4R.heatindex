@@ -18,7 +18,7 @@ heatindexGrid(tas, hurs, parallel = FALSE, max.ncores = 16, ncores = NULL)
 \item{ncores}{Integer. Specific number of cores to use.}
 }
 \value{
-A climate4R object with the computed index.
+A climate4R object with the computed index in Kelvin.
 }
 \description{
 Computation of the simplified physiological heat index introduced by Lu et al. (2025) directly
@@ -43,8 +43,8 @@ sphi <- heatindexGrid(tas = ERA5_day_t2m, hurs = ERA5_day_hurs)
 \references{
 Lu, Y.-C. and Romps, D. M. (2025). heatindex: Tools for Calculating Heat Stress. \url{https://heatindex.org}.
 
-Lu, Y.-C., et al. (2025). Simpler and faster: An improved heat index. Journal of Applied Meteorology
-and Climatology, in review.
+Lu, Y., A. Goodman, P. Kalmus, and D. M. Romps, 2026: Simpler and Faster: An Improved Heat Index.
+J. Appl. Meteor. Climatol., 65, 665–679, https://doi.org/10.1175/JAMC-D-25-0067.1.
 }
 \author{
 climate4R adaptation by C. Rodriguez-Rumayor.
